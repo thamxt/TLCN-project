@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+{% block body %}
+    <hr />
+    You said: {{ sentence }}
+    <hr />
+    <ul>
+        <li> Sentiment: {{ sentiments }}</li>
+        
+    </ul>
+
+    <hr />
+    <a href="{{ url_for('demo') }}">Thử câu khác</a>
+{% endblock %}
